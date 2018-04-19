@@ -10,7 +10,7 @@ The system on initialization creates a bounding box for each occluder. On runtim
 3. You tag your occludees which are basically all the entities you would like to trigger their state for this section. These entities have to be children of the section entity.
 4. You tag your cameras which can be global for all sections. If they are active (enabled === true) they will be tested one after the other against the occluders. If a camera is inside an occluder all entities will be enabled for that section.
 
-### How to use it in my project?
+### Where to use it in my project?
 
 - You can setup sections and gain a nice performance boost from the reduced draw calls and polycount. Combined with the new batching system it can help a lot, especially on mobile.
 - You can enable the broadcast property on the script and you will get enabled/disabled events for a section. Which you can subscribe to from your scripts, like this:
